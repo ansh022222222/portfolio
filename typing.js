@@ -24,3 +24,34 @@ function type() {
   }
 }
 type();
+function openModal() {
+  document.getElementById("mealModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("mealModal").style.display = "none";
+}
+
+function openSecureModal() {
+  document.getElementById("secureModal").style.display = "flex";
+}
+
+function closeSecureModal() {
+  document.getElementById("secureModal").style.display = "none";
+}
+
+function openAIModal() {
+  document.getElementById("aiModal").style.display = "flex";
+}
+
+function closeAIModal() {
+  document.getElementById("aiModal").style.display = "none";
+}
+
+function openCancerModal() {
+  document.getElementById("cancerModal").style.display = "flex";
+}
+
+function closeCancerModal() {
+  document.getElementById("cancerModal").style.display = "none";
+}

@@ -23,11 +23,71 @@
   </header>
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Mealmeat App</h3>
-      <p class="projects-paragraph" onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">This is my assignment project as this is all about the meal planning using kotlin language where we can create the recipe, plan the meal according to our
-      wish and this app also shows the ingredient and location where that ingredient are available.</p>
-    </div>
+    <section class="projects">
+   <!-- your project cards here -->
+
+   <div class="project">
+      <h3>MealMate – Android Application</h3>
+      <p>
+        A mobile application designed to help users plan meals and explore recipes.
+      </p>
+
+      <button onclick="openModal()">Project Details</button>
+   </div>
+
+</section>
+
+
+<!-- PASTE THE MODAL CODE HERE -->
+<div id="mealModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>MealMate – Android Mobile Application</h2>
+
+    <h3>Project Description</h3>
+    <p>
+      MealMate is an Android mobile application designed to help users plan meals and manage recipes easily.
+      The app allows users to explore recipes, organize meals, and improve daily meal planning.
+    </p>
+
+    <h3>Goal</h3>
+    <p>
+      The goal of this project was to build a mobile application that simplifies meal planning and recipe
+      management while improving user experience through an intuitive interface.
+    </p>
+
+    <h3>What I Did</h3>
+    <ul>
+      <li>Developed the mobile application using Kotlin in Android Studio</li>
+      <li>Designed the user interface for recipe browsing and meal planning</li>
+      <li>Implemented recipe search and user interaction features</li>
+      <li>Structured the application flow to improve usability and navigation</li>
+    </ul>
+
+    <h3>Key Features</h3>
+    <ul>
+      <li>Recipe browsing system</li>
+      <li>Meal planning functionality</li>
+      <li>User-friendly mobile interface</li>
+      <li>Interactive navigation system</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p>Kotlin | Android Studio | XML</p>
+
+    <h3>Project Type</h3>
+    <p>Android Mobile Application</p>
+
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
     
     <div class="project">
       <h3>SecureAuthSystem</h3>

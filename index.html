@@ -23,18 +23,187 @@
       <span class="float-icon">✦</span>
       <span class="float-icon">✧</span>
     </div>
-    <img src="dp.PNG" alt="Profile" class="about-img">
+    <img src="profile.png" alt="Profile" class="about-img">
     <h2>Hello, I'm <span class="typing"></span></h2>
-    <p class="tagline">Bachelor-level IT student passionate about web development and technology.</p>
+    <p class="tagline">BSc.IT graduate with a strong passion for emerging technologies, eager to create innovative solutions.</p>
     <a class="btn" id="explore-btn">Explore Portfolio</a>
   </section>
   <section id="explore" style="padding: 60px 0 0 0; display: none;"></section>
   <div class="sections-grid" style="display: none;">
-    <div id="about-section"></div>
-    <div id="skills-section"></div>
-    <div id="projects-section"></div>
-    <div id="education-section"></div>
-    <div id="contact-section"></div>
+    <div id="about-section">
+      <section class='about-section section-card'>
+        <div class='about-flex'>
+          <img src='profile.png' alt='Profile' class='about-img animated-img'>
+          <div>
+            <h2>About Me</h2>
+            <p class='about-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">
+              I am a BSc.IT graduate with strong interest in Artificial Intelligence, Data Science, and secure system development. I have hands-on experience developing machine learning models, building secure authentication systems, and creating responsive web applications.<br><br>Through my academic projects, I have worked with technologies such as Python, PHP, JavaScript, React, and MySQL. I enjoy learning new technologies and applying my knowledge to solve real-world problems.<br><br>I am currently looking for opportunities where I can grow my skills and contribute to innovative technology projects.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="skills-section">
+      <section id='skills-section' class='skills-section section-card'>
+        <h2>Skills</h2>
+        <div class='skills-grid'>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' alt='Kotlin'><span>Kotlin</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='HTML'><span>HTML</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' alt='CSS'><span>CSS</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' alt='JavaScript'><span>JavaScript</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python'><span>Python</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' alt='SQL'><span>SQL</span></div>
+          <div class='skill-item'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='AI'><span>AI/ML</span></div>
+        </div>
+      </section>
+    </div>
+    <div id="projects-section">
+      <section id='projects' class='projects-section section-card'>
+        <h2>Projects</h2>
+        <div class='project'>
+          <h3>MealMate – Android Application</h3>
+          <p class='projects-paragraph'>A mobile application designed to help users plan meals and explore recipes.</p>
+          <button onclick="openModal()" class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Details</button>
+        </div>
+        <div class="project">
+           <h3>Secure Authentication System</h3>
+           <p>
+           A cybersecurity-based web application that implements secure login,
+           multi-factor authentication, and CAPTCHA protection.
+           </p>
+           <button onclick="openSecureModal()" class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Details</button>
+           <a href="https://ansh022222222.github.io/SecureAuthSystem/" target="_blank">
+              <button class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Link</button>
+           </a>
+        </div>
+        <div class="project">
+           <h3>AI Solution – Startup Website</h3>
+           <p>
+           A responsive business website created for an AI startup concept
+           with UI/UX design and structured content management.
+           </p>
+           <button onclick="openAIModal()" class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Details</button>
+           <a href="https://ansh022222222.github.io/AI_Solution/" target="_blank">
+              <button class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Link</button>
+           </a>
+        </div>
+        <div class="project">
+           <h3>Breast Cancer Prediction</h3>
+           <p>
+           A machine learning model developed to classify breast cancer tumors
+           using medical dataset analysis.
+           </p>
+           <button onclick="openCancerModal()" class="btn" style="margin-top: 10px; font-size: 0.9rem;">Project Details</button>
+        </div>
+
+        <div id="mealModal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>MealMate – Android Mobile Application</h2>
+            <h3>Project Description</h3>
+            <p>MealMate is an Android mobile application designed to help users plan meals and manage recipes easily. The app allows users to explore recipes, organize meals, and improve daily meal planning.</p>
+            <h3>Goal</h3>
+            <p>The goal of this project was to build a mobile application that simplifies meal planning and recipe management while improving user experience through an intuitive interface.</p>
+            <h3>What I Did</h3>
+            <ul>
+              <li>Developed the mobile application using Kotlin in Android Studio</li>
+              <li>Designed the user interface for recipe browsing and meal planning</li>
+              <li>Implemented recipe search and user interaction features</li>
+              <li>Structured the application flow to improve usability and navigation</li>
+            </ul>
+            <h3>Key Features</h3>
+            <ul>
+              <li>Recipe browsing system</li>
+              <li>Meal planning functionality</li>
+              <li>User-friendly mobile interface</li>
+              <li>Interactive navigation system</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <p>Kotlin | Android Studio | XML</p>
+            <h3>Project Type</h3>
+            <p>Android Mobile Application</p>
+          </div>
+        </div>
+
+        <div id="secureModal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close" onclick="closeSecureModal()">&times;</span>
+            <h2>Secure Authentication System</h2>
+            <h3>Project Description</h3>
+            <p>
+            A secure authentication system designed to protect user accounts from unauthorized access.
+            The system implements multiple security layers including MFA and CAPTCHA.
+            </p>
+            <h3>Key Features</h3>
+            <ul>
+              <li>Secure login and registration</li>
+              <li>Multi-Factor Authentication (MFA)</li>
+              <li>CAPTCHA protection</li>
+              <li>Session authentication security</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <p>PHP | MySQL | HTML | CSS | JavaScript</p>
+            <h3>Project Link</h3>
+            <a href="https://ansh022222222.github.io/SecureAuthSystem/" target="_blank">
+              <button class="btn">View Project</button>
+            </a>
+          </div>
+        </div>
+
+        <div id="aiModal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close" onclick="closeAIModal()">&times;</span>
+            <h2>AI Solution – Startup Website</h2>
+            <h3>Project Description</h3>
+            <p>
+            A modern responsive website designed for an AI startup concept
+            showcasing services, solutions, and company information.
+            </p>
+            <h3>What I Did</h3>
+            <ul>
+              <li>Designed UI/UX layout</li>
+              <li>Developed responsive pages</li>
+              <li>Created admin panel structure</li>
+              <li>Implemented structured data handling</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <p>HTML | CSS | JavaScript | Figma</p>
+            <h3>Project Link</h3>
+            <a href="https://ansh022222222.github.io/AI_Solution/" target="_blank">
+              <button class="btn">View Project</button>
+            </a>
+          </div>
+        </div>
+
+        <div id="cancerModal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close" onclick="closeCancerModal()">&times;</span>
+            <h2>Breast Cancer Prediction – Machine Learning Project</h2>
+            <h3>Project Description</h3>
+            <p>
+            A machine learning model developed to predict whether a tumor is
+            malignant or benign using medical data analysis.
+            </p>
+            <h3>What I Did</h3>
+            <ul>
+              <li>Data preprocessing and cleaning</li>
+              <li>Exploratory data analysis</li>
+              <li>Built classification models</li>
+              <li>Evaluated model performance</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <p>Python | Pandas | NumPy | Scikit-learn | Matplotlib</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="education-section">
+      <section id='education-section' class='education-section section-card'><h2>Education</h2><ul class='education-list'><li class='education-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');"><strong>Bachelor</strong><br>Bachelor of Science in Information Technology (BSc.IT)   
+<br>International School of Management and Technology (ISMT) <br>Apr, 2023 - Jan, 2026</li></ul></section>
+    </div>
+    <div id="contact-section">
+      <section id='contact-section' class='contact-section section-card'><h2>Contact Me</h2><p class='contact-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">Email: <a href='mailto:anshu205902@gmail.com'>anshu205902@gmail.com</a></p><p class='contact-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">Phone: +977-9861218479</p><p class='contact-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">LinkedIn: <a href='https://www.linkedin.com/in/anshu-shrestha-2a0726317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' target='_blank'>Ansu Shrestha</a></p><p class='contact-paragraph' onclick="this.classList.remove('fade-up'); void this.offsetWidth; this.classList.add('fade-up');">GitHub: <a href='https://github.com/ansh022222222' target='_blank'>GitHub Profile</a></p><a href='Ansu-Shrestha-CV.pdf' class='btn'>Download CV</a></section>
+    </div>
   </div>
   <script src="script.js"></script> 
   <script src="typing.js"></script>
